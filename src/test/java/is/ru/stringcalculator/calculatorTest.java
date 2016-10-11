@@ -15,8 +15,10 @@ public class CalculatorTest {
 		assertEquals(1, Calculator.add("1"));
 	}
 
+	
+
 	@Test
-	public void testTwoNumber() {
-		assertEquals(3, Calculator.add("1,2"));
-	}
+	public void testManyNumber() {
+		assertEquals(10, Calculator.add("2,3,5"));
+	}	
 }
