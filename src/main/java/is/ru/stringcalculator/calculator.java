@@ -3,17 +3,17 @@ package is.ru.stringcalculator;
 public class Calculator {
 
 	public static int add(String text){
-		if(text.equals(""))
+		if(text.equals("")) {
 			return 0;
+		}
 
 		else if(text.contains(",")){
 			return sum(splitNumbers(text));
 		}
 		 
-		else	
+		else {	
 			return 1;
-
-
+		}
 	}
 
 	private static int toInt(String text){
@@ -21,6 +21,9 @@ public class Calculator {
 	}
 
 	private static String[] splitNumbers(String numbers){
+		if(numbers.contains("\n")){
+			numbers = numbers.replace("\n", ",");
+		}
 		return numbers.split(",");
 	}
 
