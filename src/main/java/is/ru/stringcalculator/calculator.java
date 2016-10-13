@@ -37,7 +37,7 @@ public class Calculator {
 		for(String number : numbers){
 			n = toInt(number);
 			
-			if(n >= 0){
+			if(n <= 1000){
 				total += n;
 			}
 			if(n < 0){
@@ -52,10 +52,7 @@ public class Calculator {
 		return total;
 	}
 
-	/*private static int negativeNumber(String numbers){
-
-		throw new IllegalArgumentException("Negatives not allowed: ");
-	}*/
+	
 
 
 }
